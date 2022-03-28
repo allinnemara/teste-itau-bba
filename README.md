@@ -1,3 +1,19 @@
+<!-- PROJECT SHIELDS -->
+<p>
+  <img src="https://img.shields.io/badge/last%20commit-22%20set%2021-a3a52a" alt="last commit" />
+  <img src="https://img.shields.io/badge/license-MIT-95c30e" alt="license MIT" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Typescript" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Html5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="Css3" />
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass" />
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+</p>
+
+<a href="">
+  <h1 align="left">Itaú BBA</h1>
+</a>
+
 ## Tabela de Conteúdo
 
 - [Sobre o Projeto](#sobre-o-projeto)
@@ -5,6 +21,7 @@
 - [Começando](#come%C3%A7ando)
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
   - [Instalação](#instala%C3%A7%C3%A3o)
+  - [Workflow](#workflow)  
 - [Licença](#licen%C3%A7a)
 - [Contato](#contato)
 
@@ -77,10 +94,32 @@ npm i
 ng serve
 ```
 
+### Workflow
+
+Nesta seção haverão instruções para editar o template e manter a estrutura principal de módulos explicando para que os diretórios são utilizados e também os arquivos de configuração.
+
+- **dist/** - Diretório publico de arquivos estáticos da aplicação;
+- **src/** - 
+>- **app/** - Diretório principal de configuração e organização da aplicação;
+> >- **services/**  - Serviços utilizados na aplicação;
+> > >- **interceptos/** - Interceptors utilizados na aplicação;
+> >- **shared/**  - Componentes reutilizáveis ou particionados;
+> >- **routes/**  - Cada componente é tratado como um mini aplicativo Angular;
+> >- **interfaces/**  - Contém as interfaces utilizadas pela aplicação;
+>- **assets/** - Arquivos da aplicação;
+> >- **icons/** - Armazena o favicon e ícones relacionados;
+> >- **img/** - Imagens e ícones utilizados na aplicação;
+> >- **styles/** - Arquivos SCSS (baseado no padrão SMACSS);
+> > >- **base/** - Código padrão para o projeto;
+> > >- **abstracts/** - Guarda todas as ferramentas e auxiliares de SASS usados por todo o projeto;
+> > >- **components/** - Contêm tudo que é necessário para criar o layout do site ou aplicação, com foco nos componentes da aplicação;
+> > >- **main.scss** - Arquivo main CSS;
+- *index.html* - Arquivo padrão de start da aplicação;
+
 ## Licença
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## Contato
 
-Allinne Mara - [Perfil Gitgub](https://github.com/allinnemara) - **allinne.mara@hotmail.com.br**
+Allinne Mara - [Linkedln](https://www.linkedin.com/in/allinne-mara/) - **allinne.mara@hotmail.com.br**

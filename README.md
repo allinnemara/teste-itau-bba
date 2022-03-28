@@ -10,7 +10,7 @@
 
 ## Sobre o Projeto
 
-Esse projeto foi desenvolvido com o objetivo de atender aos requisitos solicitados no teste de seleção Itaú BBA. O projeto possui uma estrututa simples e objetiva, observando padrões e boa prática na escrita do código. A aplicação é responsiva, podendo ser utilizado recursos PWA para uma melhor usabilidade no mobile.
+Esse projeto foi desenvolvido com o objetivo de atender aos requisitos solicitados no teste de seleção Itaú BBA. O projeto possui uma estrututa simples e objetiva, observando padrões e boas práticas na escrita do código. A aplicação é responsiva, podendo ser utilizado recursos PWA para uma melhor usabilidade no mobile. Foi utilizado o padrão de nomenclatura camelCase para a criação das classes no css.
 
 ### Estrutura de Desenvolvimento
 

@@ -1,0 +1,20 @@
+.title{
+  font-size: var(--fontSizeTitle);
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0 0 .2rem;
+}
+
+.subtitle{
+  font-size: var(--fontSizeSubtitle);
+  font-weight: 300;
+  line-height: 100%;
+  margin: 0 0 .1rem;
+}
+
+.fontLight{
+  font-weight: 300 !important;
+}
+.fontBold{
+  font-weight: 600 !important;
+}

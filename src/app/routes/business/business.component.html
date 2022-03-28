@@ -1,0 +1,151 @@
+<main>
+  <section class="container py-5">
+    <h1 class="title">Polo {{business?.name}}</h1>
+    <p class="subtitle">exibindo detalhes do polo {{business?.name}}#{{business?.id}}</p>
+
+    <p class="pt-5" *ngIf="!business">Carregando...</p>
+
+    <form class="pt-5" *ngIf="business" #formDirective="ngForm" [formGroup]="form" (submit)="save()" novalidate>
+      <p>Detalhes do Endereço</p>
+
+      <div class="row">
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Cep</mat-label>
+          <input
+            matInput
+            name="cep"
+            autocomplete="cep"
+            [type]="'text'"
+            [formControlName]="'adressCep'"
+            mask="00000-000"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-4" appearance="outline">
+          <mat-label>Nome da Rua</mat-label>
+          <input
+            matInput
+            name="rua"
+            [type]="'text'"
+            [formControlName]="'adressLogradouro'"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Bairro</mat-label>
+          <input
+            matInput
+            name="bairro"
+            [type]="'text'"
+            [formControlName]="'adressBairro'"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Estado</mat-label>
+          <input
+            matInput
+            name="estado"
+            [type]="'text'"
+            [formControlName]="'adressUf'"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Cidade</mat-label>
+          <input
+            matInput
+            name="cidade"
+            [type]="'text'"
+            [formControlName]="'adressLocalidade'"
+          >
+        </mat-form-field>
+      </div>
+
+      <p class="pt-4">Detalhes da Empresa</p>
+
+      <div class="row">
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input
+            matInput
+            name="nome"
+            [type]="'text'"
+            [formControlName]="'name'"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Business</mat-label>
+          <input
+            matInput
+            name="business"
+            [type]="'text'"
+            [formControlName]="'business'"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Valuation</mat-label>
+          <input
+            class="inputValue"
+            matInput
+            name="valuation" currencyMask
+            [formControlName]="'valuation'"
+            [type]="'text'"
+            [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>CNPJ</mat-label>
+          <input
+            matInput
+            name="cnpj"
+            [formControlName]="'cnpj'"
+            [mask]="'00.000.000/0000-00'"
+            [type]="'tel'"
+            maxlength="18"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="col-12 col-md-6 col-lg-2" appearance="outline">
+          <mat-label>Ativo?</mat-label>
+
+          <mat-select name="type" [formControlName]="'active'">
+            <mat-option selected [value]="true">
+              Sim
+            </mat-option>
+
+            <mat-option selected [value]="false">
+              Não
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+      <div class="pt-4">
+        <button
+          mat-raised-button
+          type="button"
+          (click)="backPreviousPage()"
+          class="bgButtonSecondary"
+          matTooltip="Voltar para página anterior"
+        >
+          Voltar
+        </button>
+
+        <button
+          mat-raised-button
+          type="submit"
+          (click)="backPreviousPage()"
+          class="bgButtonPrimary ms-3 px-5"
+          [matTooltip]="form.invalid ? 'Preencha os campos obrigatórios' : 'Salvar alterações'"
+        >
+          Salvar
+        </button>
+      </div>
+    </form>
+  </section>
+</main>

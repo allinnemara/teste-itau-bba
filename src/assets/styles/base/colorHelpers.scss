@@ -1,0 +1,36 @@
+.colorPrimary{
+  color: var(--colorPrimary);
+}
+.colorSecondary{
+  color: var(--colorSecondary);
+}
+.colorSuccess{
+  color: var(--colorSuccess)
+}
+.colorError{
+  color: var(--colorError)
+}
+
+.bgSuccess{
+  background-color: var(--colorSuccess) !important;
+  color: #000 !important;
+}
+.bgError{
+  background-color: var(--colorError) !important;
+  color: #000 !important;
+}
+
+.bgButtonPrimary{
+  background-color: var(--colorPrimary) !important;
+  color: #fff !important;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+.bgButtonSecondary{
+  background-color: var(--colorSecondary) !important;
+  color: #fff !important;
+  &:hover{
+    opacity: 0.8;
+  }
+}

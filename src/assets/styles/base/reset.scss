@@ -1,0 +1,62 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none !important;
+  font-size: 14px;
+}
+
+html,body {
+  background-color: var(--colorBgApp);
+}
+
+body{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  @include media-breakpoint-down('md'){
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none!important;
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    color: var(--colorPrimary);
+  }
+}
+
+button {
+  outline: none!important;
+  &:focus{
+    outline: none !important;
+  }
+}
+
+small {
+  font-size: 75%;
+}
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 9px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--colorScrollBar);
+  border-radius: 9px;
+  cursor: pointer;
+  height: 50px;
+}

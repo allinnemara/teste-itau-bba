@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--colorBgHeader);
+  border-bottom: 2px solid var(--colorBgHeader--dark);
+  padding: 1.2rem 0;
+  .header__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.userProfile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:before{
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+    margin-right: 1rem;
+  }
+  .userProfile__avatar{
+    background-color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .userProfile__info{
+    line-height: 120%;
+    transform: scale(70%);
+  }
+}
